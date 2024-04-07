@@ -22,3 +22,5 @@ class EntrySerializer(serializers.ModelSerializer):
         del validated_data['author_id']
 
         return Entry.objects.create(**validated_data)
+
+
